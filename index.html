@@ -15,7 +15,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- customizing -->
+    <!-- customizing-color -->
     <script>
         tailwind.config = {
             theme: {
@@ -36,12 +36,90 @@
         .manrope {
             font-family: "Manrope", sans-serif;
         }
+
+        .di {
+            visibility: visible;
+        }
     </style>
 </head>
 
 <body class="manrope">
-    <h2 class="text-text">thijklj </h2>
-    <header></header>
+    <header class=" width-[1240px] mx-auto p-4">
+        <!-- nav -->
+        <nav class="py-3">
+            <div class="navbar ">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0" class=" menu-sm dropdown-content mt-3 p-2 bg-none   w-52 border-none">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="images/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 ">
+                        <li><a class="text-[#FF4240]" href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end ">
+                    <a class="py-3 px-5 rounded-md bg-[#FF4240] text-white  ">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <!-- slide  section -->
+        <section class="py-4 ">
+            <div class="carousel w-full h-auto lg:h-[450px] rounded-md ">
+                <!-- slide 1 -->
+                <div id="slide1" class="carousel-item relative w-full ">
+                    <img src="images/banner1.png" class="w-full rounded-md" />
+                    <div class="absolute  flex  gap-5 left-[119px]  lg:left-5  bottom-5">
+                        <a href="#slide4"
+                            class="btn btn-circle bg-black text-white border-none hover:bg-slate-700">❮</a>
+                        <a href="#slide2"
+                            class="btn btn-circle bg-black text-white border-none hover:bg-slate-700">❯</a>
+                    </div>
+                </div>
+                <!-- slide 2 -->
+                <div id="slide2" class="carousel-item relative w-full ">
+                    <img src="images/banner2.webp" class="w-full rounded-md" />
+                    <div class="absolute  flex  gap-5 left-[119px]  lg:left-5  bottom-5">
+                        <a href="#slide1"
+                            class="btn btn-circle bg-black text-white border-none hover:bg-slate-700">❮</a>
+                        <a href="#slide3"
+                            class="btn btn-circle bg-black text-white border-none hover:bg-slate-700">❯</a>
+                    </div>
+                </div>
+                <!-- silde 3 -->
+                <div id="slide3" class="carousel-item relative w-full rounded-md">
+                    <img src="images/banner3.jpg" class="w-full" />
+                    <div class="absolute  flex  gap-5 left-[119px]  lg:left-5  bottom-5">
+                        <a href="#slide2"
+                            class="btn btn-circle bg-black text-white border-none hover:bg-slate-700">❮</a>
+                        <a href="#slide4"
+                            class="btn btn-circle bg-black text-white border-none hover:bg-slate-700">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- main -->
     <main></main>
     <footer></footer>
 
