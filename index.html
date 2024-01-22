@@ -47,17 +47,18 @@
     <header class=" width-[1240px] mx-auto p-4">
         <!-- nav -->
         <nav class="py-3">
-            <div class="navbar ">
+            <div class="navbar p-0">
                 <div class="navbar-start">
                     <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden pl-0">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </div>
-                        <ul tabindex="0" class=" menu-sm dropdown-content mt-3 p-2 bg-none   w-52 border-none">
+                        <ul tabindex="0"
+                            class=" menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Pages</a></li>
@@ -70,7 +71,7 @@
                     </div>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 ">
+                    <ul class="menu menu-horizontal px-1">
                         <li><a class="text-[#FF4240]" href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Pages</a></li>
@@ -83,9 +84,10 @@
                 </div>
             </div>
         </nav>
+
         <!-- slide  section -->
         <section class="py-4 ">
-            <div class="carousel w-full h-auto lg:h-[450px] rounded-md ">
+            <div class="carousel w-full h-auto lg:h-[450px] rounded-md z-0 relative">
                 <!-- slide 1 -->
                 <div id="slide1" class="carousel-item relative w-full ">
                     <img src="images/banner1.png" class="w-full rounded-md" />
@@ -117,10 +119,81 @@
                     </div>
                 </div>
             </div>
+            <div class="flex lg:right-14 lg:-mt-40 z-10 lg:absolute py-2 w-full lg:w-[550px] left-[52%]">
+                <div class="bg-[#30336b] text-white  p-2 lg:p-5 rounded-md">
+                    <p class=" lg:text-2xl font-bold">Meet all the heroes from the field</p>
+                    <p class="text-sm text-gray-400">
+                        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
+                    </p>
+                </div>
+            </div>
         </section>
     </header>
     <!-- main -->
-    <main></main>
+
+    <main class=" width-[1240px] mx-auto p-4">
+        <!-- hocey-club section -->
+        <section class="hocey-club-section py-5">
+
+            <!-- hocey-club section description -->
+            <div class=" border-solid  border-y py-7">
+                <div class="w-full lg:w-[600px] text-center mx-auto space-y-3 ">
+                    <h1 class="text-3xl font-bold">Professional Hockeys Club</h1>
+                    <p class="text-sm text-gray-400">
+                        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus
+                        urna
+                        in sit nullam proin.
+                    </p>
+                </div>
+            </div>
+            <!--  progrees  card -->
+            <div class="grid grid-cols-1 lg:grid-cols-4 justify-center items-center gap-5 py-6">
+                <!-- card1 -->
+                <div class="card-1 lg:w-72 text-center space-y-3 grid-cols-1 px-5">
+                    <div class="radial-progress text-black " style="--value:70; color: red;" role="progressbar">
+                        <span class="text-black font-bold text-2xl">70%</span>
+                    </div>
+                    <h2 class="text-base font-bold">Prayer Facility</h2>
+                    <p class="text-sm">
+                        Amet consectetur. Condimentum dignissim adipiscing .
+                    </p>
+                </div>
+                <!-- card2 -->
+                <div class="card-1 lg:w-72 text-center space-y-3 grid-cols-1 px-5">
+                    <div class="radial-progress text-black " style="--value:65; color: #4c8df1;" role="progressbar">
+                        <span class="text-black font-bold text-2xl">65%</span>
+                    </div>
+                    <h2 class="text-base font-bold">Experienced Coach</h2>
+                    <p class="text-sm">
+                        Amet consectetur. Condimentum dignissim adipiscing .
+                    </p>
+                </div>
+                <!-- card3 -->
+                <div class="card-1 lg:w-72 text-center space-y-3 grid-cols-1 px-5">
+                    <div class="radial-progress text-black " style="--value:90; color: #49d293;" role="progressbar">
+                        <span class="text-black font-bold text-2xl">90%</span>
+                    </div>
+                    <h2 class="text-base font-bold">Senior Player</h2>
+                    <p class="text-sm">
+                        Amet consectetur. Condimentum dignissim adipiscing .
+                    </p>
+                </div>
+                <!-- card4 -->
+                <div class="card-1 lg:w-72 text-center space-y-3 grid-cols-1 px-5">
+                    <div class="radial-progress text-black " style="--value:80; color: #ffb546;" role="progressbar">
+                        <span class="text-black font-bold text-2xl">80%</span>
+                    </div>
+                    <h2 class="text-base font-bold">Training Ground</h2>
+                    <p class="text-sm">
+                        Amet consectetur. Condimentum dignissim adipiscing .
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <!--  -->
+    </main>
+
     <footer></footer>
 
 </body>
